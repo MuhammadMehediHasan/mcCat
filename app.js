@@ -1,7 +1,7 @@
 // Requiring Module
 const express = require("express");
 const ejs = require("ejs");
-const morgan = require("morgan");
+// const morgan = require("morgan");
 
 
 // Variable
@@ -10,7 +10,7 @@ const PORT = process.env.PORT || 3000;
 
 
 // Middleware
-app.use(morgan("dev"));
+// app.use(morgan("dev"));
 app.set("view engine", "ejs");
 app.use(express.static("public"))
 
